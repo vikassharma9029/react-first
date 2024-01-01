@@ -4,14 +4,22 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import FirstPage from './pages/First/FirstPage';
+import MyProfile from './Profile/MyProfile';
+import { BrowserRouter } from 'react-router-dom'
+
+import '../src/assets/css/bootstrap.min.css';
+import '../src/assets/css/style.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <FirstPage />
+    <BrowserRouter>
+      {/* <App /> */}
+      {/* <FirstPage /> */}
+      <MyProfile />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
