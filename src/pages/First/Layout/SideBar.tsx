@@ -1,17 +1,5 @@
 import Box from "@mui/material/Box"
-
-type IInfo = {
-    name: string,
-    designation: string,
-    title: string,
-    address: string,
-    dob: string
-}
-
-type IProps = {
-    personalInfo: IInfo;
-}
-
+import { IProps } from "../../../interfaces/common.interface"
 
 const skillsStack = [{
     name: 'React',

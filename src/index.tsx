@@ -5,10 +5,11 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import FirstPage from './pages/First/FirstPage';
 import MyProfile from './Profile/MyProfile';
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter,  Routes, Route  } from 'react-router-dom'
 
 import '../src/assets/css/bootstrap.min.css';
 import '../src/assets/css/style.css';
+import MyExperience from './Profile/MyExperience';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,9 +17,12 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <Routes>
+    <Route path="/" Component={MyProfile} />
       {/* <App /> */}
       {/* <FirstPage /> */}
-      <MyProfile />
+      <Route  path='/myexprience' Component={MyExperience}/>
+      </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );
